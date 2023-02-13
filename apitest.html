@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="image-container"></div>
+
+<script>
+  const imageUrl = 'https://api.example.com/image';
+  const container = document.getElementById('image-container');
+
+  fetch(imageUrl)
+    .then(response => response.blob())
+    .then(blob => {
+      const objectUrl = URL.createObjectURL(blob);
+      const img = document.createElement('img');
+      img.src = objectUrl;
+      container.appendChild(img);
+    });
+</script>
+
+</body>
+</html>
