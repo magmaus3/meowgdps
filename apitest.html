@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Displaying a Catboy Image</title>
+</head>
 <body>
-<div id="image-container"></div>
+
+  <div id="catboy-image"></div>
 
 <script>
-  const imageUrl = 'https://api.catboys.com/img';
-  const container = document.getElementById('image-container');
-
-  fetch(imageUrl)
-    .then(response => response.blob())
-    .then(blob => {
-      const objectUrl = URL.createObjectURL(blob);
+  fetch('https://api.catboys.com/img')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('catboy-image');
       const img = document.createElement('img');
-      img.src = objectUrl;
+      img.src = data.url;
       container.appendChild(img);
     });
 </script>
+<img id="catboy-image">
 
 </body>
 </html>
