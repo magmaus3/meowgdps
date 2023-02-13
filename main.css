@@ -105,12 +105,12 @@ center {
 }
 
 footer {
-		text-align: center;
+		text-align: left;
 		margin: 30px 0 10px 0;
 }
 .coolbtn {
 		color: #5f8aff;
-		font-size: 16px;
+		font-size: 20px;
 		padding: 7px 18px;
 		text-decoration: none;
 		transition: 0.2s;
@@ -127,11 +127,11 @@ footer {
 
 .coolbtn span {
 		font-size: 0px;
-		transition: 0.4s;
+		transition: 0.3s;
 }
 
 .coolbtn:hover span {
 		display: block;
-		font-size: 14px;
-		margin-left: 10px;
+		font-size: 20px;
+		margin-left: 30px;
 }
