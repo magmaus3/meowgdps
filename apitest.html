@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Displaying a Catboy Image</title>
-</head>
-<body>
+  <head>
+    <title>Display latest post from e621</title>
+  </head>
+  <body>
+    <div id="latest-post"></div>
 
-  <div id="catboy-image"></div>
-
-<script>
-  fetch('https://api.catboys.com/img')
-    .then(response => response.json())
-    .then(data => {
-      const container = document.getElementById('catboy-image');
-      const img = document.createElement('img');
-      img.src = data.url;
-      container.appendChild(img);
-    });
-</script>
-<img id="catboy-image">
-
-</body>
+    <script>
+      fetch(`https://e926.net/posts.json?tags=geometry_dash&limit=1`, {
+      })
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('latest-post');
+        const img = document.createElement('img');
+        img.src = data.posts[0].file.url;
+        container.appendChild(img);
+      })
+    </script>
+  </body>
 </html>
