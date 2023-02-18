@@ -28,7 +28,10 @@ h3 {
 	font-weight: 900;
         font-size: 18px
 }
-
+p {
+	font-family: 'Titles';
+	font-weight: 100;
+}
 .acc {
 	display: inline-flex;
 	align-items: center;
@@ -61,37 +64,45 @@ h3 {
 	margin: 10px;
 	position: relative;
 	border-color: transparent;
-	background-color: #ffff64;
-	color: #000;
-	transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+	background-color: transparent;
+	color: #ffff64;
+	transition: transform 0.2s;
+	font-weight: 400;
 }
-	
 .floof1:hover {
-  background-color: #ffff90;
+  background-color: #333;
+  border-color: #ffff64;
+  transform: scale(1.1);
 }
 .floof2 {
 	margin: 10px;
 	position: relative;
 	border-color: transparent;
-	background-color: #aa33ff;
-	color: #000;
-	transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+	background-color: transparent;
+	color: #aa33ff;
+	transition: transform 0.2s;
+	font-weight: 400;
 }
 	
 .floof2:hover {
-  background-color: #aa44ff;
+	background-color: #333;
+	border-color: #aa33ff;
+	transform: scale(1.1);
 }
 .floof3 {
 	margin: 10px;
 	position: relative;
 	border-color: transparent;
-	background-color: #7de3a4;
-	color: #000;
-	transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+	background-color: transparent;
+	color: #7de3a4;
+	transition: transform 0.2s;
+	font-weight: 400;
 }
 	
 .floof3:hover {
-  background-color: #7df3a4;
+	background-color: #333;
+	border-color: #7de3a4;
+	transform: scale(1.1);
 }
 center {
 		display: flex;
