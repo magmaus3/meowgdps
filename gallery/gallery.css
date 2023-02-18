@@ -1,0 +1,93 @@
+@font-face {
+	font-family: 'Regular';
+	src: url('../fonts/applefont.otf');
+}
+@font-face {
+	font-family: 'Titles';
+	src: url('../fonts/GoogleSans-Medium.ttf');
+}
+body {
+	background-color: #222;
+	font-family: 'Regular';
+	font-size: 18px;
+	color: white;
+	padding-top: 40px;
+	border-style: solid;
+	border-color: #111;
+	border-width: 15px;
+	border-radius: 15px;
+}
+h1 {
+	font-family: 'Titles';
+	font-weight: 900;
+    text-align: center;
+}
+.gallery {
+	width: relative;
+    text-align: center;
+  }
+  
+  .gallery img, .galer {
+	display: inline-block;
+	height: 200px;
+	border-radius: 10px;
+	margin: 10px;
+}
+.gallery img {
+	margin-right: 10px;
+	transition: transform 0.1s;
+}
+.gallery img:hover {
+	transform: scale(1.1);
+}
+.galer {
+	width: 200px;
+	object-fit: scale-down;
+}
+h6 {
+	font-family: 'Titles';
+	font-weight: 900;
+    text-align: center;
+	font-size: 17px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+footer {
+	text-align: left;
+	margin: 30px 0 10px 0;
+}
+.coolbtn {
+	color: #5f8aff;
+	font-size: 20px;
+	padding: 7px 18px;
+	text-decoration: none;
+	transition: 0.2s;
+	border-radius: 50px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+.coolbtn h6 {
+	margin-left: 30px;
+  }
+  .coolbtn h1 {
+	position: relative;
+	right: 70px;
+  }
+  
+
+.coolbtn:hover {
+	background-color: #5f8aff;
+	color: #222;
+}
+
+.coolbtn span {
+	font-size: 0px;
+	transition: 0.3s;
+}
+
+.coolbtn:hover span {
+	display: block;
+	font-size: 11px;
+}
