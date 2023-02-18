@@ -26,6 +26,7 @@ h2 {
 	font-family: 'Titles';
 	font-weight: 900;
     text-align: center;
+	line-height: 0.4;
 }
 h3 {
 	font-family: 'Titles';
@@ -96,7 +97,7 @@ footer {
 .coolbtn h6 {
 	margin-left: 30px;
   }
-  .coolbtn:hover h1 {
+  .coolbtn h1 {
 	position: relative;
 	right: 70px;
   }
@@ -115,4 +116,54 @@ footer {
 .coolbtn:hover span {
 	display: block;
 	font-size: 11px;
+}
+.me {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.7rem 2rem;
+	font-family: "Titles";
+	font-weight: 700;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	color: #5f8aff;
+	backface-visibility: hidden;
+	border: solid transparent;
+	border-radius: 0.5rem;
+}
+
+.ow {
+	margin: 10px;
+	position: relative;
+	border-color: transparent;
+	background-color: #5f8aff;
+	color: #000;
+	transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+.ow:hover {
+	animation: rainbow 0.5s linear infinite;
+}
+
+@keyframes rainbow {
+	0% {background-color: #FF0000;}
+	17% {background-color: #FF7F00;}
+	34% {background-color: #FFFF00;}
+	51% {background-color: #00FF00;}
+	68% {background-color: #0000FF;}
+	85% {background-color: #4B0082;}
+	100% {background-color: #8F00FF;}
+}
+  center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: auto;
+	flex-wrap: wrap;
+}
+.cat {
+	display: inline-block;
+	height: 300px;
+	border-radius: 10px;
 }
