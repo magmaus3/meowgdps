@@ -1,0 +1,133 @@
+@font-face {
+	font-family: 'Regular';
+	src: url('../fonts/applefont.otf');
+}
+@font-face {
+	font-family: 'Titles';
+	src: url('../fonts/GoogleSans-Medium.ttf');
+}
+
+body {
+	background-color: #222;
+	font-family: 'Regular';
+	font-size: 18px;
+	color: white;
+	padding-top: 30px;
+}
+center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+center a {
+    color: white;
+    font-size: 30px;
+}
+center h3 {
+    text-decoration: none;
+}
+.cr {
+	font-family: 'Titles';
+	font-weight: 900;
+    text-decoration: none;
+    border-radius: 25px;
+}
+.cr:hover {
+    background-color: #333;
+}
+
+h1 {
+	font-family: 'Titles';
+	font-weight: 900;
+}
+h2 {
+	font-family: 'Titles';
+	width: 100%;
+	background-color: #333;
+}
+h3 {
+	font-family: 'Titles';
+	font-weight: 200;
+    text-decoration: underline;
+    margin: 0 0 0 0;
+}
+
+.burger {
+    font-family: 'Regular';
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    float: right;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+.burger:hover {
+    text-decoration: underline #ffff64;
+}
+.burger:active {
+    color: #ffff64;
+    transform: scale(0.9);
+}
+
+.max {
+    font-family: 'Regular';
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+    float: left;
+}
+.max:hover {
+    text-decoration: underline #7de3a4;
+}
+.max:active {
+    color: #7de3a4;
+    transform:scale(0.9);
+}
+
+.mefi {
+    font-family: 'Regular';
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    float: right;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+.mefi:hover {
+    text-decoration: underline #aa33ff;
+}
+.mefi:active {
+    color: #aa33ff;
+    transform: scale(0.9);
+}
+
+.meow:hover {
+	animation: rainbow-background 2s ease infinite;
+  }
+  
+  @keyframes rainbow-background {
+	0% {
+	  color: red;
+	}
+	16.67% {
+	  color: orange;
+	}
+	33.33% {
+	  color: yellow;
+	}
+	50% {
+	  color: green;
+	}
+	66.67% {
+	  color: blue;
+	}
+	83.33% {
+	  color: indigo;
+	}
+	100% {
+	  color: violet;
+	}
+  }
