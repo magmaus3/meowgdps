@@ -1,15 +1,9 @@
 @font-face {
-	font-family: 'Regular';
-	src: url('../fonts/applefont.otf');
-}
-@font-face {
 	font-family: 'Titles';
 	src: url('../fonts/GoogleSans-Medium.ttf');
 }
 body {
 	background-color: #222;
-	font-family: 'Regular';
-	font-size: 18px;
 	color: white;
 	padding-top: 40px;
 	border-style: solid;
@@ -19,19 +13,7 @@ body {
 }
 h1 {
 	font-family: 'Titles';
-	font-weight: 900;
-    text-align: center;
-}
-h2 {
-	font-family: 'Titles';
-	font-weight: 900;
-    text-align: center;
-	line-height: 0.4;
-}
-h3 {
-	font-family: 'Titles';
 	text-align:center;
-    font-size: 30px;
 	width:relative;
 	margin: auto;
 	background-color: #333;
@@ -42,128 +24,63 @@ h3 {
 	border-radius: 5px;
     text-align: center;
 }
-h4 {
+h2 {
 	font-family: 'Titles';
-	text-align:center;
-    font-size: 30px;
-	width:relative;
-	margin: auto;
-	background-color: #333;
-	border-left-style: solid;
-	border-right-style: solid;
-	border-color: #ffff00;
-	border-width: 20px;
-	border-radius: 5px;
+	font-weight: 600;
     text-align: center;
+	line-height: 0.4;
+	font-size: 28px;
 }
-h5 {
-	font-family: 'Titles';
-	text-align:center;
-    font-size: 30px;
-	width:relative;
-	margin: auto;
-	background-color: #333;
-	border-left-style: solid;
-	border-right-style: solid;
-	border-color: #00ff00;
-	border-width: 20px;
-	border-radius: 5px;
-    text-align: center;
+.circle {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-right: 5px;
 }
-h6 {
-	font-family: 'Titles';
-	font-weight: 900;
-    text-align: center;
-	font-size: 17px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+.green {
+	background-color: rgb(0, 255, 0);
 }
-footer {
-	text-align: left;
-	margin: 30px 0 10px 0;
+.red {
+	background-color: red;
 }
-.coolbtn {
-	color: #5f8aff;
-	font-size: 20px;
-	padding: 7px 18px;
-	text-decoration: none;
-	transition: 0.2s;
-	border-radius: 50px;
+    .card {
+	margin-bottom: 10px;
+}
+
+.but {
 	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 10px;
-}
-.coolbtn h6 {
-	margin-left: 30px;
-  }
-  .coolbtn h1 {
-	position: relative;
-	right: 70px;
-  }
-  
-
-.coolbtn:hover {
-	background-color: #5f8aff;
-	color: #222;
-}
-
-.coolbtn span {
-	font-size: 0px;
-	transition: 0.3s;
-}
-
-.coolbtn:hover span {
-	display: block;
-	font-size: 11px;
-}
-.me {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
 	padding: 0.7rem 2rem;
 	font-family: "Titles";
-	font-weight: 700;
+	font-weight: 570;
 	font-size: 18px;
-	text-align: center;
 	text-decoration: none;
 	color: #5f8aff;
-	backface-visibility: hidden;
 	border: solid transparent;
 	border-radius: 0.5rem;
 }
-
-.ow {
-	margin: 10px;
-	position: relative;
-	border-color: transparent;
-	background-color: #5f8aff;
-	color: #000;
-	transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+.ton {
+    margin: 10px;
+    position: relative;
+    border-color: transparent;
+    background-color: #333;
+    color: #222;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
 }
-
-.ow:hover {
-	animation: rainbow 0.5s linear infinite;
+.ton:hover {
+    transform: scale(1.15);
+    color: #89bbff;
+    border-color: #89bbff;
 }
-
-@keyframes rainbow {
-	0% {background-color: #FF0000;}
-	17% {background-color: #FF7F00;}
-	34% {background-color: #FFFF00;}
-	51% {background-color: #00FF00;}
-	68% {background-color: #0000FF;}
-	85% {background-color: #4B0082;}
-	100% {background-color: #8F00FF;}
+.l:hover {
+    color: #00ff00;
+    border-color: #00ff00;
 }
-  center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-left: auto;
-	flex-wrap: wrap;
+.l:active {
+    color: #ff0000;
+    border-color: #ff0000;
 }
-.cat {
-	display: inline-block;
-	height: 300px;
-	border-radius: 10px;
+.ton:active
+{
+    transform: scale(0.95);
 }
