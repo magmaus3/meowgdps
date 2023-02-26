@@ -1,26 +1,22 @@
-  function meow() {
-  fetch('https://api.catboys.com/img')
+function trello() {
+  fetch('https://api.trello.com/1/boards/0yEIn65R/cards')
     .then(response => response.json())
     .then(data => {
-      const container = document.getElementById('catboy-image');
-      const img = document.createElement('img');
-      img.src = data.url;
-      img.classList.add('cat');
-      container.appendChild(img);
+      const cardList = document.getElementById('list');
+      cardList.innerHTML = '';
+      data.forEach(card => {
+        const cardName = card.name;
+        const hasGreenLabel = card.labels.some(label => label.color === 'green');
+        const hasRedLabel = card.labels.some(label => label.color === 'red');
+
+        if (hasGreenLabel) {
+          cardList.innerHTML += '<div class="card"><span class="circle green"></span>' + cardName + '</div>';
+        } else if (hasRedLabel) {
+          cardList.innerHTML += '<div class="card"><span class="circle red"></span>' + cardName + '</div>';
+        }
+      });
     });
-    const myButton = document.getElementById('boop');
-    const myHeading = document.getElementById('count');
-    
-    let isClicked = false;
-    
-    myButton.addEventListener('click', function() {
-      if (isClicked) {
-        myHeading.textContent = '';
-      } else {
-        myHeading.textContent = 'Whoops, didnt mean that to happen';
-      }
-      
-      isClicked = !isClicked;
-    });
-    
 }
+
+trello();
+window.onload = trello;
