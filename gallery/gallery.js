@@ -1,4 +1,4 @@
-fetch(`https://e926.net/posts.json?tags=gdps2point2`, {})
+fetch(`https://e926.net/posts.json?tags=user:GDPS2point2`, {})
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('latest-post');
