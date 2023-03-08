@@ -1,4 +1,4 @@
-fetch(`https://e926.net/posts.json?tags=gdps2point2&limit=5`, {
+fetch(`https://e926.net/posts.json?tags=user:GDPS2point2&limit=5`, {
   })
   .then(response => response.json())
   .then(data => {
