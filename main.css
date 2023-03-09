@@ -86,34 +86,6 @@ h3 {
 	  color: violet;
 	}
   }
-  
-.acc {
-	display: inline-flex;
-	padding: 0.7rem 2rem;
-	font-family: "Titles";
-	font-weight: 600;
-	font-size: 18px;
-	text-decoration: none;
-	color: #5f8aff;
-	border: solid transparent;
-	border-radius: 0.5rem;
-}
-.ount {
-	margin: 10px;
-	position: relative;
-	border-color: transparent;
-	background-color: #5f8aff;
-	color: #000;
-	transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
-}
-.ount:hover {
-  background-color: #89bbff;
-  transform: scale(1.15);
-}
-.ount:active
-{
-	transform: scale(0.95);
-}
 
 .coolbtn {
     color: #5f8aff;
