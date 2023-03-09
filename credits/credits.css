@@ -14,97 +14,104 @@ body {
 	color: white;
 	padding-top: 30px;
 }
-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-center a {
-    color: white;
-    font-size: 30px;
-}
-center h3 {
-    text-decoration: none;
-}
-.cr {
-	font-family: 'Titles';
-	font-weight: 900;
-    text-decoration: none;
-    border-radius: 25px;
-}
-.cr:hover {
-    background-color: #333;
-}
 
 h1 {
 	font-family: 'Titles';
 	font-weight: 900;
+    text-align: center;
 }
 h2 {
 	font-family: 'Titles';
 	width: 100%;
 	background-color: #333;
+    text-align: center;
 }
 h3 {
 	font-family: 'Titles';
 	font-weight: 200;
-    text-decoration: underline;
-    margin: 0 0 0 0;
+    font-size: 30px;
+    text-align: center;
 }
-
-.burger {
-    font-family: 'Regular';
+h4 {
+    font-family: 'Titles';
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: -1%;
+    text-decoration: underline;
+}
+a {
     color: white;
     text-decoration: none;
-    font-size: 30px;
-    font-weight: 600;
-    float: right;
+}
+
+.c {
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.c:hover {
+    background-color: #444;
+}
+.c:before {
+    content: "Credits";
+}
+  .c:hover:before {
+    content: "Back";
+}
+
+.t {
     transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
 }
-.burger:hover {
-    text-decoration: underline #ffff64;
+.t:hover {
+    text-decoration: underline white;
+    transform: scale(1.1);
 }
-.burger:active {
+.t:active {
+    color: white;
+    transform: scale(0.9);
+}
+
+.b {
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+.b:hover {
+    text-decoration: underline #ffff64;
+    transform: scale(1.1);
+}
+.b:active {
     color: #ffff64;
     transform: scale(0.9);
 }
-
-.max {
-    font-family: 'Regular';
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 600;
-    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
-    float: left;
-}
-.max:hover {
-    text-decoration: underline #7de3a4;
-}
-.max:active {
-    color: #7de3a4;
-    transform:scale(0.9);
-}
-
-.mefi {
-    font-family: 'Regular';
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 600;
-    float: right;
+.m {
     transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
 }
-.mefi:hover {
+.m:hover {
     text-decoration: underline #aa33ff;
+    transform: scale(1.1);
 }
-.mefi:active {
+.m:active {
     color: #aa33ff;
     transform: scale(0.9);
 }
+.x {
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+.x:hover {
+    text-decoration: underline #7de3a4;
+    transform: scale(1.1);
+}
+.x:active {
+    color: #7de3a4;
+    transform: scale(0.9);
+}
 
+.meow {
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
 .meow:hover {
+    transform: scale(1.1);
 	animation: rainbow-background 2s ease infinite;
   }
   
@@ -131,3 +138,6 @@ h3 {
 	  color: violet;
 	}
   }
+  .meow:active {
+    transform: scale(0.9);
+}
