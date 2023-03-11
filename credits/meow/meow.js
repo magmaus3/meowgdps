@@ -14,7 +14,7 @@ function femboys() {
     })
 }
 function notfemboys() {
-    const url = 'https://nekos.moe/api/v1/random/image?nsfw=false&count=1';
+    const url = 'https://nekos.moe/api/v1/random/image?nsfw=false&tags=cat_ears&count=1';
     fetch(url)
     .then(response => response.json())
     .then(data => {
