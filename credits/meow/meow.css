@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'Titles';
+	src: url('../../fonts/GoogleSans-Medium.ttf');
+}
+
+body {
+    background-color: #222;
+    text-align: center;
+    color: white;
+    font-family: "Titles";
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.wrap {
+	width: relative;
+	white-space: nowrap;
+	overflow-x: auto;
+  }
+img {
+	display: inline-block;
+	height: 300px;
+	border-radius: 10px;
+    margin: 5px;
+}
+
+.but {
+	display: inline-flex;
+	padding: 0.7rem 2rem;
+	font-family: "Titles";
+	font-weight: 550;
+	font-size: 18px;
+	text-decoration: none;
+	color: #5f8aff;
+	border: solid transparent;
+	border-radius: 0.5rem;
+}
+.ton {
+	margin: 10px;
+	position: relative;
+	border-color: transparent;
+	background-color: #5f8aff;
+	color: #000;
+	transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+.but:hover {
+    background-color: #89bbff;
+    transform: scale(1.15);
+    animation: rainbow-background 2s ease infinite;
+  }
+  
+  .ton:active {
+    transform: scale(0.95);
+    animation-duration: 500ms;
+  }
+  
+  @keyframes rainbow-background {
+    0%, 100% {
+      color: violet;
+    }
+    16.67% {
+      color: blue;
+    }
+    33.33% {
+      color: green;
+    }
+    50% {
+      color: yellow;
+    }
+    66.67% {
+      color: orange;
+    }
+    83.33% {
+      color: red;
+    }
+  } 
