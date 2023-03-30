@@ -1,32 +1,48 @@
 <!DOCTYPE html>
+
 <html>
- <head>
-  <title>GDPS Fur-ified</title>
+
+<head>
+  <title>GDPS Editor 2.2: Fur-ified</title>
   <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta content="GDPS Fur-ified" property="og:title" />
-  <meta content="GDPS Fur-ified is an unofficial GDPS 2.2 site 'by' furries, for furries" property="og:description" />
-  <link rel="stylesheet" href="main.css">
-  <script src="main.js"></script> 
-  </head>
+  <link rel="preconnect" href="https://e926.net">
+  <meta name="title" content="GDPS Editor 2.2: Fur-ified">
+  <meta name="description"
+   content="GDPS Editor 2.2: Fur-ified is a fanmade GDPS Editor 2.2 site by furries, for furries">
+</head>
 
- <body>
-  <div class="logo">
-   <img src="logo.png" onclick="joke()" class="logo">
-   <h1>GDPS Fur-ified</h1>
+<body>
+ <div class="logo">
+  <img src="logo.png" onclick="joke()">
+  <h1>GDPS Editor 2.2 Fur-ified</h1>
+ </div>
+
+ <div class="centerbubble">
+  <div id="joke" class="speechbubble"></div>
+ </div>
+
+ <h3>GDPS Fur-ified is an unofficial GDPS 2.2 site
+  <a href="#credits" onclick="openPopup()">by furries</a>
+  , for furries</h3>
+
+  <div id="creditsp">
+  <button class="but ton" onclick="closePopup()">Back</button>
+   <iframe src="credits"></iframe>
   </div>
-  <h5 style="font-weight: 300;" id="joke"></h5>
-  <h3>GDPS Fur-ified is an unofficial GDPS 2.2 site <a href="credits" class="credit">by furries</a>, for furries</h3>
-  <h2>Our Accounts</h2>
-   <h5 style="font-weight: 300;">Due to "NSFW" reasons the links has been moved to our github repository, take that you pesky childrens with your l phones</h5>
+
+ <h2>Our Accounts</h2>
+  <h4>Due to "NSFW" reasons the links has been moved to our github repository, take that you pesky childrens with your lphones</h4>
+
   <h2>Our Latest Artwork</h2>
-   <div id="latest-post" class="gallery"></div>
-  <footer>
+  <div id="latest-post" class="gallery"></div>
    <a class="coolbtn" href="gallery">
     <h3>Gallery</h3>
-    <span><h1>></h1></span>
+     <span><h1>></h1></span>
    </a>
-  </footer>
- </body>
+</body>
+
 </html>
