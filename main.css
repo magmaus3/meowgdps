@@ -106,6 +106,7 @@ a {
 
 .but {
 	padding: 0.7rem 2rem;
+	text-decoration: none;
 	font-family: "Titles";
 	font-weight: 570;
 	font-size: 18px;
