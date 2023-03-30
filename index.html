@@ -31,7 +31,7 @@
 
   <div id="creditsp">
   <button class="but ton" onclick="closePopup()">Back</button>
-   <iframe src="credits"></iframe>
+  <iframe src="credits" onload="this.contentDocument.body.querySelectorAll('a').forEach(link => link.setAttribute('target', '_blank'))"></iframe>
   </div>
 
  <h2>Our Accounts</h2>
