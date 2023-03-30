@@ -1,143 +1,75 @@
 @font-face {
-	font-family: 'Regular';
-	src: url('../fonts/applefont.otf');
+  font-family: 'Regular';
+src: url('../fonts/applefont.otf');
 }
 @font-face {
-	font-family: 'Titles';
-	src: url('../fonts/GoogleSans-Medium.ttf');
+font-family: 'Titles';
+src: url('../fonts/GoogleSans-Medium.ttf');
 }
 
 body {
-	background-color: #222;
-	font-family: 'Regular';
-	font-size: 18px;
-	color: white;
-	padding-top: 30px;
-}
+    background-color: #222;
+    padding-top: 30px;
+    font-family: 'Regular';
+    text-align: center;
+      font-size: 18px;
+      color: white;
+  }
 
-h1 {
-	font-family: 'Titles';
-	font-weight: 900;
-    text-align: center;
-}
-h2 {
-	font-family: 'Titles';
-	width: 100%;
-	background-color: #333;
-    text-align: center;
-}
-h3 {
-	font-family: 'Titles';
-	font-weight: 200;
-    font-size: 30px;
-    text-align: center;
-}
-h4 {
-    font-family: 'Titles';
-    font-size: 20px;
-    font-weight: 200;
-    text-align: center;
-    margin-top: -1%;
-    text-decoration: underline;
-}
-a {
+  a {
     color: white;
     text-decoration: none;
-}
-
-.c {
-    text-decoration: none;
-    transition: 0.5s;
-    border-radius: 20px;
-}
-
-.c:hover {
-    background-color: #444;
-}
-.c:before {
-    content: "Credits";
-}
-  .c:hover:before {
-    content: "Back";
-}
-
-.t {
-    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
-}
-.t:hover {
-    text-decoration: underline white;
-    transform: scale(1.1);
-}
-.t:active {
-    color: white;
-    transform: scale(0.9);
-}
-
-.b {
-    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
-}
-.b:hover {
-    text-decoration: underline #ffff64;
-    transform: scale(1.1);
-}
-.b:active {
-    color: #ffff64;
-    transform: scale(0.9);
-}
-.m {
-    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
-}
-.m:hover {
-    text-decoration: underline #aa33ff;
-    transform: scale(1.1);
-}
-.m:active {
-    color: #aa33ff;
-    transform: scale(0.9);
-}
-.x {
-    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
-}
-.x:hover {
-    text-decoration: underline #7de3a4;
-    transform: scale(1.1);
-}
-.x:active {
-    color: #7de3a4;
-    transform: scale(0.9);
-}
-
-.meow {
-    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
-}
-.meow:hover {
-    transform: scale(1.1);
-	animation: rainbow-background 2s ease infinite;
   }
-  
-  @keyframes rainbow-background {
-	0% {
-	  color: red;
-	}
-	16.67% {
-	  color: orange;
-	}
-	33.33% {
-	  color: yellow;
-	}
-	50% {
-	  color: green;
-	}
-	66.67% {
-	  color: blue;
-	}
-	83.33% {
-	  color: indigo;
-	}
-	100% {
-	  color: violet;
-	}
+
+  .credits-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10px;
   }
-  .meow:active {
-    transform: scale(0.9);
+  .credits-item {
+    padding: 10px;
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .burgerycrafty {
+    background-image: linear-gradient(to right, transparent 50%, #ffff64 100%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease-out;
+  }
+  .burgerycrafty:hover {
+    color: black;
+    background-position: -100%;
+  }
+
+  .xiliam {
+    background-image: linear-gradient(to left, transparent 50%, #7de3a4 100%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease-out;
+    background-position: -100%;
+  }
+.xiliam:hover {
+  color: black;
+  background-position: 0%;
 }
+
+  .enxorbyte {
+    background-image: linear-gradient(to right, transparent 50%, #ff2bde 75%, #53fff3 100%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease-out;
+  }
+  .enxorbyte:hover {
+    color: black;
+    background-position: -100%;
+  }
+
+  .mefinity {
+    background-image: linear-gradient(to right, transparent 50%, #f506f5 75%, #aa33ff 100%);
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease-out;
+  }
+  .mefinity:hover {
+    color: black;
+    background-position: -100%;
+  }
