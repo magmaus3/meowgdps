@@ -26,19 +26,23 @@ fetch(`https://e926.net/posts.json?tags=user:GDPS2point2`, {})
     # Executed in the repository's root
     curl "https://api.tumblr.com/v2/blog/[[ BLOG NAME ]]/posts/photo?api_key=[[ YOUR API KEY ]]" > gallery/tumblr.json
  */
-fetch(`/gallery/tumblr.json`, {})
+fetch(`tumblr.json`, {})
   .then(response => response.json())
   .then(data => {
-    const container = document.getElementById('latest-post');
-    let parser = new DOMParser();
-    let parsed
-    data.response.posts.forEach(post => {
-        parsed = parser.parseFromString(post.body, 'text/html')
-        Array.prototype.slice.call(parsed.getElementsByTagName("img")).forEach(img => {
-            let link = document.createElement("a")
-            link.setAttribute('href', post.post_url)
-            link.appendChild(img)
-            container.appendChild(link)
+    if (data.response.posts.length > 0) {
+        const container = document.getElementById('latest-post');
+        container.innerText = ""
+        let parser = new DOMParser();
+        let parsed
+        data.response.posts.forEach(post => {
+            parsed = parser.parseFromString(post.body, 'text/html')
+            Array.prototype.slice.call(parsed.getElementsByTagName("img")).forEach(img => {
+                let link = document.createElement("a")
+                link.setAttribute('href', post.post_url)
+                link.appendChild(img)
+                container.appendChild(link)
+            })
         })
-    })
+    }
+
 })
