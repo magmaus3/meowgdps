@@ -1,0 +1,40 @@
+name: 'Publish the website'
+on: 
+  push:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+
+jobs:
+  prepare-the-website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+
+      - name: Get the tumblr response
+        env:
+          BLOG_NAME: gdps2point2
+          TUMBLR_API_KEY: ${{ secrets.TUMBLR_API_KEY }}
+        run: |
+          curl "https://api.tumblr.com/v2/blog/${{ env.BLOG_NAME }}/posts/photo?api_key=${{ env.TUMBLR_API_KEY }}" > gallery/tumblr.json
+      - name: Upload the page artifact 
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: .
+
+  deploy:
+    needs: prepare-the-website
+    permissions: 
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Github Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
