@@ -1,27 +1,3 @@
-fetch(`https://e926.net/posts.json?tags=user:GDPS2point2&limit=5`)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('oh no.');
-    }
-    return response.json();
-  })
-  .then(data => {
-    const container = document.getElementById('latest-post');
-    for (let i = 0; i < data.posts.length; i++) {
-      const img = document.createElement('img');
-      img.src = data.posts[i].file.url;
-      img.classList.add('gallery');
-      img.addEventListener('load', () => img.classList.add('loaded'));
-      container.appendChild(img);
-    }
-  })
-  .catch(error => {
-    const container = document.getElementById('latest-post');
-    const text = document.createElement('p');
-    text.innerText = "Whoops!, looks like e621 is down";
-    container.appendChild(text);
-  });
-
 function joke() {
   const speechBubble = document.getElementById('joke');
   if (speechBubble.classList.contains('visible')) {
