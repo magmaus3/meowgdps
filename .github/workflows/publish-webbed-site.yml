@@ -1,9 +1,9 @@
 name: 'Publish the website'
 on: 
   workflow_dispatch:
-  push:
-  schedule:
-    - cron: '0 * * * *' # Runs every hour
+#  push:
+#  schedule:
+#    - cron: '0 * * * *' # Runs every hour
 
 jobs:
   prepare-the-website:
